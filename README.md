@@ -134,20 +134,6 @@ Explore the full visual journey:
 
 ---
 
-**Internship Details**  
-**Company**: Blue Planet Infosolutions Pvt Ltd (Pan Health)  
-**Domain**: Embedded System Development  
-**Duration**: June 2025 – December 2025  
-**Mentor**: Avi Kulkarni Sir  
-
----
-
-## 📄 Documentation
-
-Full internship completion report and task-wise attachments are available in the  
-[`06-Documentations`](./06-Documentations) folder.
-
----
 ## 👨‍💻 Contributors
 
 <table>
@@ -172,7 +158,24 @@ Full internship completion report and task-wise attachments are available in the
     </td>
   </tr>
 </table>
+
 ---
+
+**Internship Details**  
+**Company**: Blue Planet Infosolutions Pvt Ltd (Pan Health)  
+**Domain**: Embedded System Development  
+**Duration**: June 2025 – December 2025  
+**Mentor**: Avi Kulkarni Sir  
+
+---
+
+## 📄 Documentation
+
+Full internship completion report and task-wise attachments are available in the  
+[`06-Documentations`](./06-Documentations) folder.
+
+---
+
 
 <p align="center">
   <b>Built with precision. Tested in real conditions. Delivered as a product.</b><br>
