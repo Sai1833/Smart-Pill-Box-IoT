@@ -1,5 +1,5 @@
 
-# 💊 Smart QR Pill Box – IoT Edition
+# 💊 Smart QR Pill Box – IoT Project
 
 ### American Version | ESP32 + Bluetooth | End-to-End Product
 
