@@ -1,116 +1,159 @@
 
-# Smart Pill Box IoT
+# 💊 Smart QR Pill Box – IoT Edition
 
-An IoT-enabled Smart Pill Box designed to monitor medication adherence. The system detects when pills are taken from individual compartments and provides real-time status over Wi-Fi via a simple web interface.
+### American Version | ESP32 + Bluetooth | End-to-End Product
 
-## Project Overview
+<p align="center">
+  <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Microcontroller-ESP32-blue?style=for-the-badge&logo=espressif" />
+  <img src="https://img.shields.io/badge/Connectivity-Bluetooth-blueviolet?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Domain-Healthcare%20IoT-orange?style=for-the-badge" />
+  <img src="https://img.shields.io/badge/Internship-Blue%20Planet%20Infosolutions-red?style=for-the-badge" />
+</p>
 
-This project implements a complete end-to-end Smart Pill Box solution — from circuit simulation and cardboard prototyping to custom PCB fabrication, 3D enclosure design, laser-cut housing, and final working hardware.
+<p align="center">
+  <b>A complete smart medication monitoring system designed, fabricated, assembled, and delivered as a working product.</b><br>
+  From sensor research → PCB design & manual fabrication → 3D enclosure → battery integration → final tested unit.
+</p>
 
-The device monitors **16 pill compartments** using digital inputs and exposes their status (Taken / Replaced) through a lightweight web server running on an ESP32/ESP8266-class microcontroller.
+---
 
-### Key Features
-- Real-time monitoring of 16 individual pill slots
-- Wi-Fi connectivity with built-in web server
-- Status reporting: each slot shows **TAKEN** or **REPLACED**
-- Custom PCB design and fabrication
-- 3D-designed enclosure with laser-cut parts
-- Battery-powered with charging support
-- Complete documentation of the development process
+## 🌟 Project Vision
 
-## Repository Structure
+Medication non-adherence is a silent global problem.  
+This **Smart QR Pill Box** was built to solve it with a practical, portable, and intelligent American-style design.
 
+The system detects when pills are taken from individual compartments and communicates the status via **Bluetooth**, enabling real-time monitoring and future smart features.
+
+---
+
+## ✨ Key Highlights
+
+| Feature                        | Details                                              |
+|--------------------------------|------------------------------------------------------|
+| 📦 **10 Pill Bays**            | Final production-ready 10-slot design                |
+| 📡 **Bluetooth Connectivity**  | Real-time status via ESP32 Bluetooth                 |
+| 🔋 **Rechargeable Power**      | 3.7V Li-Ion + TP4060 + MT3608 boost                  |
+| 🛠️ **Custom PCB**             | Schematic → Layout → Manual etching → Soldering      |
+| 🖨️ **3D Enclosure**           | AutoCAD designed + Laser-cut acrylic finish          |
+| 📱 **QR Ready**                | Designed for QR-based medicine identification        |
+| 🧪 **Fully Tested**            | Office-level validation + final product delivery     |
+
+---
+
+## 🧠 How It Works
+
+
+Pill Taken → Conductive detection (Aluminium foil) → ESP32 senses change → 
+Bluetooth transmits status → Companion device / future app receives data
+
+
+The bottom of each compartment uses aluminium foil as a conductive layer. When a pill bottle or compartment is accessed, the system registers the change and updates the status over Bluetooth.
+
+---
+
+## 📁 Repository Structure
 
 Smart-Pill-Box-IoT/
-├── 01-Simulations/          # Circuit simulations (IR, Push Button, Touch Sensor)
-├── 02-Prototype/            # Cardboard prototypes and early testing videos
-├── 03-PCB_Design/           # PCB hardware photos + simulation files
-│   ├── PCB_Hardware/
-│   └── PCB_Simulation/
-├── 04-3D_Design/            # AutoCAD 3D models and design images
-│   ├── 3D_Design_Cad_Files/
-│   └── 3D_Design_vids/
-├── 05-Final_output/         # Final assembled device photos and videos
-├── 06-Documentations/       # Internship reports and testing documents
-├── 07-Code/                 # Firmware (main.c)
-└── README.md
+│
+├── 01-Simulations/          # Circuit simulations (IR / Button / Touch)
+├── 02-Prototype/            # Cardboard prototypes & early testing
+├── 03-PCB_Design/           # PCB hardware + fabrication process
+├── 04-3D_Design/            # AutoCAD models & enclosure design
+├── 05-Final_output/         # Final product photos, videos & laser cutting
+├── 06-Documentations/       # Internship reports & testing documents
+└── 07-Code/                 # ESP32 firmware
 
 
-## Hardware
+---
 
-### Main Components
-- Microcontroller with Wi-Fi (ESP32 / compatible)
-- 16 digital input pins connected to compartment sensors/buttons
-- Custom etched PCB
-- Rechargeable battery + charging circuit
-- Power switch
-- Laser-cut / 3D-designed enclosure
+## 🔌 Hardware Stack
 
-### Pin Configuration (from firmware)
-The firmware uses the following pins for the 16 slots:
+- **Microcontroller**: ESP32 DevKit V1
+- **Connectivity**: Bluetooth
+- **Power System**:
+  - 3.7V Li-Ion / LiPo battery
+  - TP4060 charging module
+  - MT3608 boost converter
+- **Detection**: Aluminium foil conductive layer
+- **Enclosure**: Custom 3D-designed + Laser-cut acrylic (blue shiny finish)
+- **PCB**: Multiple versions designed & fabricated (final 10-slot)
 
+---
 
-32, 33, 25, 26, 27, 14, 12, 13, 23, 22, 21, 19, 18, 5, 4, 15
+## 🛠️ Complete Product Development Journey
 
+| Phase                  | What Was Done                                      | Outcome                     |
+|------------------------|----------------------------------------------------|-----------------------------|
+| **Research**           | Sensor study, QR concept, LLM/SLM feasibility      | Technology selection        |
+| **Simulation**         | Multi-configuration circuits (6/10-way)            | Validated sensing methods   |
+| **Prototyping**        | Cardboard models + component assembly              | Working proof-of-concept    |
+| **PCB Design**         | Schematic → Layout → Dimension optimization        | Multiple PCB revisions      |
+| **Manual Fabrication** | Toner transfer + FeCl₃ etching + drilling          | Hands-on PCB manufacturing  |
+| **Assembly**           | ESP32 soldering + conductive interface             | Fully functional hardware   |
+| **3D Design**          | Base, top, phone holder, slot alignment            | Enclosure ready for printing|
+| **Power Integration**  | Battery + charging + boost modules                 | Portable & rechargeable     |
+| **Final Assembly**     | Fitting, adhesives, laser cutting, aesthetics      | Product-level finish        |
+| **Testing & Delivery** | Office testing + courier to Pune office            | Successfully delivered      |
 
-## Firmware
+---
 
-Located in `07-Code/main.c`.
+## 💻 Firmware
 
-### Features
-- Connects to Wi-Fi
-- Starts a web server on port 80
-- Reads the state of all 16 slots
-- Serves a plain-text status page at the root endpoint (`/`)
+Located in `07-Code/`
 
-### Setup
-1. Open `07-Code/main.c`
-2. Replace the placeholders:
-   ```c
-   const char* ssid = "YOUR_WIFI_NAME";
-   const char* password = "YOUR_WIFI_PASSWORD";
-   
-3. Upload the code to your ESP32 (or compatible board)
-4. Open the Serial Monitor (115200 baud) to get the device IP address
-5. Visit `http://<device-ip>/` in a browser to view the pill box status
+The firmware runs on ESP32 and handles:
+- Pill compartment status detection
+- Bluetooth communication
+- Real-time status reporting
 
-### Example Output
+> Update credentials as needed before flashing.
 
-Pill Box Status:
+---
 
-Slot 1: TAKEN
-Slot 2: REPLACED
-Slot 3: TAKEN
-...
+## 📸 Project Gallery
 
+Explore the full visual journey:
 
-## Development Process
+- **Simulations** → `01-Simulations/`
+- **Early Prototypes** → `02-Prototype/`
+- **PCB Fabrication Process** → `03-PCB_Design/PCB_Hardware/`
+- **3D Designs** → `04-3D_Design/`
+- **Final Product** → `05-Final_output/`
 
-1. **Simulations** – Tested different sensing methods (IR, push buttons, touch sensors)
-2. **Prototyping** – Built cardboard mock-ups to validate mechanical design
-3. **PCB Design & Fabrication** – Designed and chemically etched a custom PCB
-4. **3D Design** – Created enclosure models in AutoCAD
-5. **Final Assembly** – Laser-cut housing, battery integration, and complete device
+---
 
-## Documentation
+## 🚀 Future Roadmap
 
-- Internship Completion Reports (Sai & Manu)
-- Testing documentation
+- [ ] Mobile App (Bluetooth pairing + medication schedule)
+- [ ] QR code scanning for medicine identification
+- [ ] Cloud logging & caregiver dashboard
+- [ ] Missed dose alerts & reminders
+- [ ] LLM/SLM assisted smart suggestions
+- [ ] Multi-user support
 
-See the `06-Documentations/` folder for detailed reports.
+---
 
-## Future Improvements
+**Internship Details**  
+**Company**: Blue Planet Infosolutions Pvt Ltd (Pan Health)  
+**Domain**: Embedded System Development  
+**Duration**: June 2025 – December 2025  
+**Mentor**: Avi Kulkarni Sir  
 
-- Mobile app integration
-- Scheduled reminders / buzzer / LED indicators
-- Cloud logging of adherence data
-- Low-battery alerts
-- Support for different compartment counts
+---
 
-## License
+## 📄 Documentation
 
-This project was developed as part of an internship. Feel free to use and modify it for educational purposes.
+Full internship completion report and task-wise attachments are available in the  
+[`06-Documentations`](./06-Documentations) folder.
 
+---
 
+<p align="center">
+  <b>Built with precision. Tested in real conditions. Delivered as a product.</b><br>
+  <i>Helping people never miss their medicine — one smart box at a time.</i>
+</p>
 
-
+<p align="center">
+  ★ Star this repository if you find it useful ★
+</p>
