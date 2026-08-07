@@ -1,6 +1,5 @@
-# 💊 Smart QR Pill Box – IoT Project
-
-### ESP32 + Bluetooth | End-to-End Product
+# <p align="center"> 💊 Smart QR Pill Box – IoT Project </p>
+## <p align="center">  ESP32 + Bluetooth | End-to-End Product </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Status-Completed-brightgreen?style=for-the-badge" />
