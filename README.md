@@ -1,5 +1,7 @@
 
-# 💊 Smart QR Pill Box – IoT Project
+<p align="center">
+  # 💊 Smart QR Pill Box – IoT Project
+</p>
 
 ### ESP32 + Bluetooth | End-to-End Product
 
@@ -49,21 +51,6 @@ Bluetooth transmits status → Companion device / future app receives data
 
 
 The bottom of each compartment uses aluminium foil as a conductive layer. When a pill bottle or compartment is accessed, the system registers the change and updates the status over Bluetooth.
-
----
-
-## 📁 Repository Structure
-
-Smart-Pill-Box-IoT/
-│
-├── 01-Simulations/          # Circuit simulations (IR / Button / Touch)
-├── 02-Prototype/            # Cardboard prototypes & early testing
-├── 03-PCB_Design/           # PCB hardware + fabrication process
-├── 04-3D_Design/            # AutoCAD models & enclosure design
-├── 05-Final_output/         # Final product photos, videos & laser cutting
-├── 06-Documentations/       # Internship reports & testing documents
-└── 07-Code/                 # ESP32 firmware
-
 
 ---
 
